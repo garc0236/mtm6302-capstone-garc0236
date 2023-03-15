@@ -6,6 +6,7 @@
     <title>NASA Picture of the Day</title>    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b5e4c0a84d.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--start of the banner-->
@@ -13,7 +14,7 @@
         <img src="assets/nasa_logo_200.png" class="img-thumbnail bg-dark border-dark " alt="nasa_logo" style="width: 10rem;">
         <h1 class="title text-wrap">Astronomy Picture of the Day</h1>
     </div><!--end of the banner-->
-    <div class="d-flex justify-content-center flex-wrap">    
+    <div class="d-flex justify-content-center flex-wrap m-5">    
         <div class="card border-white" style="width: 29rem;"><!--Start of carousel-->
             <div class="card-body">
                 <h5 class="card-title text-center">Stellar Wind Shaped</h5>
@@ -40,15 +41,20 @@
                     <span class="visually-hidden">Next</span>
                     </button>
             </div>          
-            <div class="card-body">
+            <div class="card-body text-center p-0">
                 <p class="card-title text-center">Image Credit & Copyright: Eric Houck</p>
-                <button type="button" class="btn btn-dark">Save</button>
+                <button type="button" class="btn mt-2"><i class="fa-sharp fa-solid fa-star"></i></button>
             </div>
         </div><!--end of carousel -->
         <div class="border-white p-4" style="width: 50rem;"><!--beggining of paragraph explanation-->
             <h2 class="mt-5">Explanation:</h2>
             <p class="text-wrap">What lies at the end of a rainbow? Something different for everyone. For the photographer taking this picture, for example, one end of the rainbow ended at a tree. Others nearby, though, would likely see the rainbow end somewhere else. The reason is because a rainbow's position depends on the observer. The center of a rainbow always appears in the direction opposite the Sun, but that direction lines up differently on the horizon from different locations. This rainbow's arc indicates that its center is about 40 degrees to the left and slightly below the horizon, while the Sun is well behind the camera and just above the horizon. Reflections and refractions of sunlight from raindrops in a distant storm in the direction of the rainbow are what causes the colorful bands of light. This single exposure image was captured in early January near Knight's Ferry, California, USA.</p>
+            
         </div><!--end of paragraph explanation-->
+
+        <div class="position-relative"> <!--Folder Icon-->
+        <button type="button" class="btn mt-2 position-absolute bottom-0 end-0  "><i class="fa-solid fa-folder-open"></i></button>
+        </div><!--Folder Icon-->
     </div>        
           
 
