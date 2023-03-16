@@ -1,1 +1,3 @@
-# mtm6302-capstone-garc0236
+First of all the creation of this prototype was not easy, because I have to review some things that we as students have not use for a while. Also I tried to build it using boostrap and actually is the first time that I'm using this framework in most part of the project. The reason why I chose boostrap is to save a little bit of time, but I think at the end, it was the same result because I had to review and consult many things in order to accomplish the desired design.
+
+I consider that in terms of design, accomplish the objective of the assigment, but probably I'll have to find out how to implement more functionalities with javascript.
