@@ -93,7 +93,7 @@ async function fetchData () {
     fetchData()
 
 
-    const img = document.querySelector('.carousel-inner img');
+    const img = document.querySelector('.carousel-item active');
     img.addEventListener('click', function() {
       const src = this.src.replace('https://apod.nasa.gov/apod/image/2304/M2D9_HubbleSchmidt_985.jpg'); 
       this.src = src;
