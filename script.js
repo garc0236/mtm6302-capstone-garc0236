@@ -37,11 +37,17 @@ async function fetchData () {
         <div class="card-body">
             <h5 class="card-title text-center fw-bold">${title}</h5>
             <p class="card-text text-center" >${date}</p>
-        </div>
+            <form>
+                <label for="date">Choose a date:</label>
+                <input type="date" id="date" name="date">
+                <button type="submit">Submit</button>
+            </form>
+
+         </div>
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <a href="assets/RainbowTree_Houck_960.jpg" target="_blank" class="active">
+                  <a href="${url}" target="_blank" class="active">
                     <img src="${url}" class="d-block w-100" alt="rainbow_tree">
                   </a>
                 </div>
@@ -86,4 +92,9 @@ async function fetchData () {
     
     fetchData()
 
-          
+
+    const img = document.querySelector('.carousel-inner img');
+    img.addEventListener('click', function() {
+      const src = this.src.replace('https://apod.nasa.gov/apod/image/2304/M2D9_HubbleSchmidt_985.jpg'); 
+      this.src = src;
+    });
